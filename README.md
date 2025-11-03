@@ -5,10 +5,19 @@
 
 <!-- badges: start -->
 
+
 <img
 src="https://img.shields.io/badge/lifecycle-experimental-orange.svg"
 alt="Lifecycle: experimental" /> [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+
+<figure>
+<img
+src="https://img.shields.io/badge/lifecycle-experimental-orange.svg"
+alt="Lifecycle: experimental" />
+<figcaption aria-hidden="true">Lifecycle: experimental</figcaption>
+</figure>
+
 
 <!-- badges: end -->
 
