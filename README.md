@@ -5,20 +5,13 @@
 
 <!-- badges: start -->
 
-
 <img
 src="https://img.shields.io/badge/lifecycle-experimental-orange.svg"
 alt="Lifecycle: experimental" /> [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-
-<figure>
-<img
-src="https://img.shields.io/badge/lifecycle-experimental-orange.svg"
-alt="Lifecycle: experimental" />
-<figcaption aria-hidden="true">Lifecycle: experimental</figcaption>
-</figure>
-
-
+[![R-CMD-check](https://github.com/emma11284/Meteorologico/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/emma11284/Meteorologico/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/emma11284/Meteorologico/graph/badge.svg)](https://app.codecov.io/gh/emma11284/Meteorologico)
 <!-- badges: end -->
 
 ## Instalación
