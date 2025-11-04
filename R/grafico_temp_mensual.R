@@ -2,23 +2,23 @@
 #'
 #' grafica la temperatura mensual por estación
 #'
-#' @param estaciones dataframe con columnas "fecha", "temperatura_abrigo_150cm" y "id"
+#' @param datos dataframe con columnas "fecha", "temperatura_abrigo_150cm" y "id"
 #' @param colores vector de colores para las series (opcional)
 #' @param titulo título del gráfico. Por defecto "Temperatura"
 #'
 #' @returns un objeto ggplot
 #' @examples
-#' estaciones <- tibble::tibble(
+#' datos <- tibble::tibble(
 #'   id  = c("A","A","B","B"),
 #'   fecha = as.Date(c("2020-01-01","2020-02-01","2020-01-01","2020-02-01")),
 #'   temperatura_abrigo_150cm = c(10, 12, 15, 11)
 #' )
-#' grafico_temperatura_mensual(estaciones)
+#' grafico_temperatura_mensual(datos)
 #'
 #' @export
-grafico_temperatura_mensual <- function(estaciones, colores = c("darkgreen", "lightblue", "darkred","pink","purple"), titulo = "Temperatura Mensual"){
+grafico_temperatura_mensual <- function(datos, colores = c("darkgreen", "lightblue", "darkred","pink","purple"), titulo = "Temperatura Mensual"){
 
-  promedio_temp <- estaciones |>
+  promedio_temp <- datos |>
     dplyr::group_by(id,meses = lubridate::floor_date(lubridate::date(fecha), "month")) |>
     dplyr::summarise(promedio_temp_mensual = mean(temperatura_abrigo_150cm, na.rm = TRUE))
 

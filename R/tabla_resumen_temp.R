@@ -2,21 +2,21 @@
 #'
 #' devuelve una tabla de resumen de temperatura_abrigo_150cm para una o más estaciones.
 #'
-#' @param estaciones dataframe con las columnas "id" y "temperatura_abrigo_150cm"
+#' @param datos dataframe con las columnas "id" y "temperatura_abrigo_150cm"
 #'
 #' @returns un tibble con promedio y desvío estándar por estación
 #' @examples
-#' estaciones <- tibble::tibble(
+#' datos <- tibble::tibble(
 #'   id  = c("A","A","B","B"),
 #'   fecha = as.Date(c("2020-01-01","2020-02-01","2020-01-01","2020-02-01")),
 #'   temperatura_abrigo_150cm = c(10, 12, 15, 11)
 #' )
-#' tabla_resumen_temperatura(estaciones)
+#' tabla_resumen_temperatura(datos)
 #'
 #' @export
-tabla_resumen_temperatura <- function(estaciones) {
+tabla_resumen_temperatura <- function(datos) {
 
-  resumen <- estaciones |>
+  resumen <- datos |>
     dplyr::group_by(id) |>
     dplyr::summarise(
       promedio_abrigo = mean(.data$temperatura_abrigo_150cm, na.rm = TRUE),
