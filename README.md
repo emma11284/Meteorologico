@@ -12,15 +12,32 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![R-CMD-check](https://github.com/emma11284/Meteorologico/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/emma11284/Meteorologico/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/emma11284/Meteorologico/graph/badge.svg)](https://app.codecov.io/gh/emma11284/Meteorologico)
+
 <!-- badges: end -->
+
+## Autores
+
+#### Primer contribuyente
+
+- Emma Schlieper – Autor principal
+- **Usuario de GitHub:** [emma11284](https://github.com/emma11284)
+- Correo: [schlieper.emma@gmail.com](schlieper.emma@gmail.com)
+
+#### Segundo contribuyente
+
+- David Bongiovanni – Autor principal
+- **Usuario de GitHub: [avicho48](https://github.com/avicho48)**
+- correo:
+  [bongiovannidavidjuan@gmail.com](bongiovannidavidjuan@gmail.com)
 
 ## Instalación
 
-Puedes instalar la versión de desarrolo de Dama desde
-[GitHub](https://github.com/) con:
+Podes instalar la versión de desarrolo de Meteorologico desde
+[GitHub](#0) con:
 
 ``` r
-# install.packages("pak")  pak::pak("emma11284/Dama") 
+# install.packages("pak") 
+pak::pak("emma11284/Meteorologico") 
 ```
 
 ## Funciones principales
@@ -70,4 +87,46 @@ en el comportamiento térmico de una estación específica.
 grafico_temperatura_mensual(estaciones, colores = c("tomato", "dodgerblue"), titulo = "Temperatura mensual promedio")
 ```
 
-### 
+## Cómo contribuir
+
+¡Gracias por tu interés en contribuir a este paquete!  
+Toda ayuda es bienvenida: ya sea corrigiendo errores, mejorando la
+documentación o agregando nuevas funciones.
+
+### Pasos para contribuir
+
+1.  **Hacé un “fork” del repositorio**
+
+    - En la parte superior derecha de esta página de GitHub hay un botón
+      que dice **Fork**.  
+    - Al hacer clic, se creará una copia del proyecto en tu propia
+      cuenta de GitHub.
+
+2.  **Hacé los cambios que quieras**
+
+    - Podés editar los archivos directamente desde tu cuenta en GitHub o
+      descargarlos a tu computadora.  
+    - Agregá o mejorá el código, la documentación o los ejemplos.
+
+3.  **Guardá y subí los cambios a tu copia del repositorio.**
+
+4.  **Enviá una solicitud de cambio (“Pull Request”)**
+
+    - Desde tu copia en GitHub, hacé clic en **Contribute → Open pull
+      request**.  
+    - Escribí una breve descripción de lo que cambiaste y enviá la
+      solicitud.  
+    - Revisaré tus cambios y, si todo está bien, los agregaré al paquete
+      principal.
+
+### Recomendaciones
+
+- Asegurate de que tu contribución funcione correctamente antes de
+  enviarla.  
+- Mantené un lenguaje claro y un estilo de código simple.  
+- Si encontrás un error o tenés una sugerencia, también podés abrir un
+  **Issue** en GitHub para comentarlo.
+
+------------------------------------------------------------------------
+
+¡Gracias por contribuir al desarrollo de este paquete! 🙌
