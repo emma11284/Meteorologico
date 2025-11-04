@@ -30,7 +30,7 @@ Constituye el primer paso del flujo de trabajo dentro del paquete.
 
 **Ejemplo:**
 
-``` r
+```{r}
 leer_estacion("NH0437", "datos/NH0437.csv")
 ```
 
@@ -42,8 +42,8 @@ Su finalidad es ofrecer una visión general y comparativa de los datos de temper
 
 **Ejemplo:**
 
-``` r
-df <- leer_estacion("NH0437", "datos/NH0437.csv")     tabla_resumen_temperatura(df)
+```{r}
+tabla_resumen_temperatura(NH0437)
 ```
 
 ### 3. `grafico_temp_mensual()`
@@ -54,21 +54,6 @@ Es especialmente útil para observar patrones, variaciones o tendencias en el co
 
 **Ejemplo:**
 
-``` r
-grafico_temperatura_mensual(estaciones, colores = c("tomato", "dodgerblue"), titulo = "Temperatura mensual promedio")
-```
-
-### 
-
-**Ejemplo de uso**
-
 ```{r}
-estaciones <- tibble::tibble(
-id = c("A","A","B","B"),
-fecha = as.Date(c("2020-01-01","2020-02-01","2020-01-01","2020-02-01")),
-temperatura_abrigo_150cm = c(10, 12, 15, 11)
-)
-
-tabla_resumen_temperatura(estaciones)
-grafico_temperatura_mensual(estaciones)
+grafico_temperatura_mensual(NH0046)
 ```
