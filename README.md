@@ -3,6 +3,8 @@
 
 # Meteorologico
 
+<img src="man/figures/logo.jpg" align="right" height="120" style="margin-top:-40px;" />
+
 <!-- badges: start -->
 
 <img
@@ -26,7 +28,7 @@ coverage](https://codecov.io/gh/emma11284/Meteorologico/graph/badge.svg)](https:
 #### Segundo contribuyente
 
 - David Bongiovanni – Autor principal
-- **Usuario de GitHub: [avicho48](https://github.com/avicho48)**
+- **Usuario de GitHub:** [avicho48](https://github.com/avicho48)
 - correo:
   [bongiovannidavidjuan@gmail.com](bongiovannidavidjuan@gmail.com)
 

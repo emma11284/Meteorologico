@@ -15,6 +15,9 @@ knitr::opts_chunk$set(
 
 # Meteorologico
 
+<img src="man/figures/logo.jpg" align="right" height="120" style="margin-top:-40px;" />
+
+
 <!-- badges: start -->
 
 ![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg){alt="Lifecycle: experimental"} [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental) [![R-CMD-check](https://github.com/emma11284/Meteorologico/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/emma11284/Meteorologico/actions/workflows/R-CMD-check.yaml) [![Codecov test coverage](https://codecov.io/gh/emma11284/Meteorologico/graph/badge.svg)](https://app.codecov.io/gh/emma11284/Meteorologico)
@@ -32,7 +35,7 @@ knitr::opts_chunk$set(
 #### Segundo contribuyente
 
 -   David Bongiovanni – Autor principal
--   **Usuario de GitHub: [avicho48](https://github.com/avicho48)**
+-   **Usuario de GitHub:** [avicho48](https://github.com/avicho48)
 -   correo: [bongiovannidavidjuan\@gmail.com](bongiovannidavidjuan@gmail.com)
 
 ## Instalación
@@ -84,7 +87,7 @@ grafico_temperatura_mensual(estaciones, colores = c("tomato", "dodgerblue"), tit
 
 ## Cómo contribuir
 
-¡Gracias por tu interés en contribuir a este paquete! \
+¡Gracias por tu interés en contribuir a este paquete!\
 Toda ayuda es bienvenida: ya sea corrigiendo errores, mejorando la documentación o agregando nuevas funciones.
 
 ### Pasos para contribuir
