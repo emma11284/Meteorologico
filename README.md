@@ -9,11 +9,7 @@
 
 <img
 src="https://img.shields.io/badge/lifecycle-experimental-orange.svg"
-alt="Lifecycle: experimental" /> [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/emma11284/Meteorologico/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/emma11284/Meteorologico/actions/workflows/R-CMD-check.yaml)
-[![Codecov test
-coverage](https://codecov.io/gh/emma11284/Meteorologico/graph/badge.svg)](https://app.codecov.io/gh/emma11284/Meteorologico)
+alt="Lifecycle: experimental" />[![R-CMD-check](https://github.com/emma11284/Meteorologico/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/emma11284/Meteorologico/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/emma11284/Meteorologico/graph/badge.svg)](https://app.codecov.io/gh/emma11284/Meteorologico)
 
@@ -72,7 +68,8 @@ temperatura obtenidos, facilitando el análisis descriptivo.
 **Ejemplo:**
 
 ``` r
-df <- leer_estacion("NH0437", "datos/NH0437.csv")     tabla_resumen_temperatura(df)
+df <- leer_estacion("NH0437", "datos/NH0437.csv")     
+  tabla_resumen_temperatura(df)
 ```
 
 ### 3. `grafico_temp_mensual()`
@@ -88,7 +85,9 @@ en el comportamiento térmico de una estación específica.
 **Ejemplo:**
 
 ``` r
-grafico_temperatura_mensual(estaciones, colores = c("tomato", "dodgerblue"), titulo = "Temperatura mensual promedio")
+grafico_temperatura_mensual(datos, 
+                            colores = c("tomato", "dodgerblue"), 
+                            titulo = "Temperatura mensual promedio")
 ```
 
 ## Cómo contribuir

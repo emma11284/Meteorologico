@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 
-![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg){alt="Lifecycle: experimental"} [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental) [![R-CMD-check](https://github.com/emma11284/Meteorologico/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/emma11284/Meteorologico/actions/workflows/R-CMD-check.yaml) [![Codecov test coverage](https://codecov.io/gh/emma11284/Meteorologico/graph/badge.svg)](https://app.codecov.io/gh/emma11284/Meteorologico) [![Codecov test coverage](https://codecov.io/gh/emma11284/Meteorologico/graph/badge.svg)](https://app.codecov.io/gh/emma11284/Meteorologico)
+![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg){alt="Lifecycle: experimental"}[![R-CMD-check](https://github.com/emma11284/Meteorologico/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/emma11284/Meteorologico/actions/workflows/R-CMD-check.yaml) [![Codecov test coverage](https://codecov.io/gh/emma11284/Meteorologico/graph/badge.svg)](https://app.codecov.io/gh/emma11284/Meteorologico)
 
 <!-- badges: end -->
 
@@ -69,7 +69,8 @@ Su finalidad es ofrecer una visión general y comparativa de los datos de temper
 **Ejemplo:**
 
 ``` r
-df <- leer_estacion("NH0437", "datos/NH0437.csv")     tabla_resumen_temperatura(df)
+df <- leer_estacion("NH0437", "datos/NH0437.csv")     
+  tabla_resumen_temperatura(df)
 ```
 
 ### 3. `grafico_temp_mensual()`
@@ -81,7 +82,9 @@ Es especialmente útil para observar patrones, variaciones o tendencias en el co
 **Ejemplo:**
 
 ``` r
-grafico_temperatura_mensual(estaciones, colores = c("tomato", "dodgerblue"), titulo = "Temperatura mensual promedio")
+grafico_temperatura_mensual(datos, 
+                            colores = c("tomato", "dodgerblue"), 
+                            titulo = "Temperatura mensual promedio")
 ```
 
 ## Cómo contribuir
